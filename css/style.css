@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: #908b8b;
+
+}
+.container{
+    z-index: 0;
+}
+
+.logo {
+    margin-top: 7px;
+    margin-left: 5%;
+    position: absolute;
+    z-index: 2;
+    height: 50px;
+    width: auto;
+}
+.container h2{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    position: absolute;
+    margin :10%;
+}
+.nav-top{ 
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.nav-top a{
+    font-family: "PT Sans", sans-serif;
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    
+}
+.nav-top a:hover{
+    color: #999999;
+}
+.name {
+    margin-top: 1%;
+    margin-left: 10%;
+    position: absolute;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(85, 82, 82);
+}
+.sponsor-container {
+    overflow: hidden; 
+    width: 100%; 
+}
+.header1{
+    align-items: center;
+    text-align: center;
+}
+.header1 h1{
+    color: #ffffff;
+}
+.sponsor {
+    padding: 20px;
+    display: flex; 
+    gap: 3rem; 
+    animation: infinite-scroll 10s linear infinite; 
+}
+
+.sponsor img {
+    height: 6rem; 
+}
+
+@keyframes infinite-scroll {
+    from {
+        transform: translateX(0); 
+    }
+    to {
+        transform: translateX(-10%); 
+    }
+}
+.discover{
+    user-select: none;
+    display: flex;
+    background-color: white;
+    margin-top: 100px;
+}
+.discover img{
+    position: relative;
+    color: black;
+    opacity:  0.7;
+    padding: 60px;
+    height: auto;
+    width: 100%
+}
+.discover h1{
+    margin-top: 25%;
+    align-items: center;
+    font-size: 30px;
+    position: absolute;
+    color: rgb(255, 244, 244);
+    left: 100px;
+}
+.discover a{
+    position: absolute;
+    margin-top: 30%;
+    left: 100px;
+    padding: 20px;
+    background-color:rgb(203, 147, 41) ;
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    border-radius: 40px;
+}
+.header2{
+    text-align: center;
+    justify-content: center;
+}
+.header2 h1{
+    color: #ffffff;
+}
+.slideshow section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    flex: 0 0 auto; 
+    width: 300px; 
+    height: 550px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+ 
+.slideshow section img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: transform .2s;
+}
+
+.slideshow section h2,
+.slideshow section p {
+    margin: 5px;
+}
+
+.slideshow section input {
+    color: rgb(79, 78, 78);
+    background-color: #ffffff;
+    height: 25px;
+    width: 100px;
+    border: none;
+    font-family: "PT Sans", sans-serif;
+    border-radius: 20px;
+    align-self: flex-start; 
+    margin-top: auto; 
+}
+
+.slideshow input:hover {
+    background-color: #797878;
+    color: #fff;
+}
+
+.slideshow section img:hover {
+    transform: scale(0.9);
+}
+
+.slideshow h1 {
+    align-items: center;
+}
+
+.slideshow {
+    display: flex;
+    overflow-x: auto; 
+    gap: 60px;
+    padding: 20px;
+    cursor: grab; 
+    scrollbar-width: none; 
+    user-select: none; 
+}
+
+.slideshow::-webkit-scrollbar {
+   display: none;
+}
+.sidebar {
+    display: none;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(144, 139, 139, 0.77);
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: 0.3s;
+    padding-top: 60px;
+    color: white;
+    z-index: 2;
+    overflow-x: hidden;     
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    transition: 0.3s;
+    border-radius: 0 20px 20px 0;
+}
+
+.sidebar a:hover {
+    background-color: darkgray;
+}
+
+.sidebar .icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.content {
+    right: 10%;
+    position: relative;
+    text-align: center;
+}
+
+.content h1{
+    font-size: small;
+    margin: 10px 0; 
+}
+.content span {
+    font-weight: lighter;
+    font-size: small;
+    margin: 10px 0; 
+}
+.arti {
+    user-select: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+}
+
+.arti section {
+    overflow: hidden;
+    position: relative; 
+    flex: 1;
+    height: auto;
+    width: auto;
+}
+
+.arti section h1 {
+    color: #ffffff;
+    margin-left: 20px;
+    font-size: 30px;
+    position: absolute; 
+    top: 200px; 
+    left: 20px; 
+    transition: transform .2s; 
+}
+
+.arti section p {
+    position: absolute; 
+    height: 50px;
+    width: 100%;
+    bottom: -46px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(86, 83, 83);
+    padding: 10px; 
+    box-sizing: border-box; 
+    transition: transform .2s; 
+}
+.arti section img {
+    width: 100%;
+    transition: transform .2s; 
+}
+
+.arti section:hover img {
+    transform: translateY(-50px);
+}
+
+.arti section:hover h1 {
+    transform: translateY(-50px);
+}
+
+.arti section:hover p {
+    transform: translateY(-50px);
+    display: block;
+}
+
+.open-btn {
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #908b8b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 3;
+}
+
+.open-btn:hover {
+    color: #333;
+}
+
+
+footer {
+    margin-top: 10%;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-nav a:hover {
+    color: #777;
+}
+
+.social-links {
+    margin-bottom: 10px;
+}
+
+.social-links i {
+    width: 24px;
+    margin: 0 10px;
+    padding: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 20px;
+    color: #777;
+}
+.search-bar {
+    width: 100px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    display: none; 
+    align-items: center;
+    padding: 0 15px;
+}
+
+
+.search-bar input {
+    border: none;
+    width: 90px;
+    background-color: transparent;
+    font-size: 16px;
+    color: #333333;
+    padding: 0;
+    outline: none; 
+}
+
+
+.search-bar input::placeholder {
+    color: #999999;
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+#icon i {
+    font-size: 20px;
+    color: #333333;
+}
+
+
+@media screen and (min-width: 801px) {
+    .sidebar {
+        left: 0;
+    }
+    .content {
+        margin-left: 250px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sidebar {
+        left: -250px;
+        width: 60px;
+    }
+    .sidebar .menu, .name, .qr {
+        display: none;
+    }
+    .logo {
+        margin-left: 10%;
+    }
+
+    .footer-bottom{
+        font-size: 16px;
+    }
+    .footer-nav {
+        font-size: 12px;
+    }
+    .main{
+        height: 200px;
+        width: auto;
+        margin-left: 60%;
+        margin-top: 10%;
+    }
+    .container h2{
+        font-size: 16px;
+    }
+    .search-container {
+        width: 90%;
+    }
+
+    .search-input {
+        font-size: 14px;
+    }
+
+    .search-button {
+        font-size: 14px;
+    }
+    .nav-top a{
+        padding: 5px;
+        font-size: 10px;
+    }
+    .content {
+
+        right: 0%;
+        left: 1%;
+        position: relative;
+    
+    }
+    .content h1{
+        font-size: 10px;
+        margin: 10px 0; 
+    }
+    .content span {
+        font-weight: lighter;
+        font-size: 10px;
+        margin: 10px 0; 
+    }
+    .arti{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .arti section h1{
+        top: 150px; 
+        left: 20px; 
+    }
+    .arti section p{
+        font-size: 10px;
+    }
+    .discover h1{
+        font-size: 20px;
+    }
+    .discover a{
+        font-size: 10px;
+        border-radius: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container h2{
+        margin-top: 15%;
+        font-size: 10px;
+    }
+    .arti section {
+        height: 270px;
+        width: auto;
+    }
+    .arti section p{
+        bottom: 0;
+    }
+    .arti section:hover img {
+        transform: translateY(0);
+    }
+    
+    .arti section:hover h1 {
+        transform: translateY(0);
+    }
+    
+    .arti section:hover p {
+        transform: translateY(0);
+        display: block;
+    }
+    .discover h1{
+        font-size: 11px;
+    }
+}
